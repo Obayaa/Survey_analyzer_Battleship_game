@@ -123,8 +123,8 @@ class BattleshipGUI:
         mode_frame.grid(row=0, column=3, padx=5)
         ttk.Radiobutton(mode_frame, text="1 Player", variable=self.game_mode_var, 
                        value="1").grid(row=0, column=0)
-        ttk.Radiobutton(mode_frame, text="2 Players", variable=self.game_mode_var, 
-                       value="2").grid(row=0, column=1)
+        # ttk.Radiobutton(mode_frame, text="2 Players", variable=self.game_mode_var, 
+        #                value="2").grid(row=0, column=1)
 
         # Start button
         ttk.Button(setup_frame, text="Start New Game", 
