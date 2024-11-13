@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battleship Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Battleship</h1>
+        
+        <div class="boards-container">
+            <div class="board-section">
+                <h2>Your Board</h2>
+                <div id="player-board" class="board"></div>
+            </div>
+
+            <div class="board-section">
+                <h2>Computer's Board</h2>
+                <div id="computer-board" class="board"></div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-marker ship"></span> Your Ship
+            </div>
+            <div class="legend-item">
+                <span class="legend-marker hit">X</span> Hit
+            </div>
+            <div class="legend-item">
+                <span class="legend-marker miss">O</span> Miss
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p id="winner-text"></p>
+            <div class="modal-buttons">
+                <button onclick="restartGame()" class="btn primary">Play Again</button>
+                <button onclick="window.location.href='/'" class="btn secondary">Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const gridSize = {{ grid_size }};
+        const playerBoard = {{ player_board | tojson }};
+        createBoard('player-board', playerBoard, true);
+        createBoard('computer-board', Array(gridSize).fill().map(() => Array(gridSize).fill("")), false);
+    </script>
+</body>
+</html>
