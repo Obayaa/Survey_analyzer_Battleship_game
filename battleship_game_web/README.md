@@ -69,7 +69,6 @@ This project is a web-based implementation of the classic **Battleship** game. D
 - **static/**: Holds all static files.
   - **css/**: Contains `styles.css` for custom styling.
   - **js/**: Contains `game.js` for JavaScript game logic.
-  - **images/**: Any images or icons used in the game interface.
 
 
 ## Future Improvements
