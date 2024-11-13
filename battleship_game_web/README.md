@@ -10,7 +10,6 @@ This project is a web-based implementation of the classic **Battleship** game. D
 - [Setup Instructions](#setup-instructions)
 - [Gameplay](#gameplay)
 - [File Structure](#file-structure)
-- [Screenshots](#screenshots)
 - [Future Improvements](#future-improvements)
 
 ## Features
@@ -72,9 +71,6 @@ This project is a web-based implementation of the classic **Battleship** game. D
   - **js/**: Contains `game.js` for JavaScript game logic.
   - **images/**: Any images or icons used in the game interface.
 
-## Screenshots
-
-*(Include screenshots of the game layout, turn-based gameplay, and game-over modal)*
 
 ## Future Improvements
 
