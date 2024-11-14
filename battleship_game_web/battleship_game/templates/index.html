@@ -11,7 +11,7 @@
         <div class="popup" id="">
             <span class="close" id ="closePopup">&times;</span>
             <div class="popup-content">
-                <p>Welcome to Battleship Game!</p>
+                <p id = "Heading">Welcome to Battleship Game!</p>
                 <p>Select Grid option to start playing the game.</p>
                 <form action="{{ url_for('start_game') }}" method="POST">
                     <label for="grid_size">Choose Grid Size:</label>
