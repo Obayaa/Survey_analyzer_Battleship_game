@@ -11,6 +11,8 @@ This project is a web-based implementation of the classic **Battleship** game. D
 - [Gameplay](#gameplay)
 - [File Structure](#file-structure)
 - [Future Improvements](#future-improvements)
+- [Screenshots](#Screenshots)
+- [License](#license)
 
 ## Features
 
@@ -78,6 +80,10 @@ This project is a web-based implementation of the classic **Battleship** game. D
 - **Animated Transitions**: Enhance the visual experience with smooth transitions between turns.
 - **Score Tracking**: Implement a scoreboard to keep track of wins and losses across sessions.
 - **Mobile Responsiveness**: Improve design for mobile-friendly gameplay.
+
+## Screenshots
+
+![Gameplay Screenshot](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/battleship.png)
 
 ## License
 
