@@ -85,6 +85,4 @@ This project is a web-based implementation of the classic **Battleship** game. D
 
 ![Gameplay Screenshot](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/battleship.png)
 
-## License
-
-This project is licensed under the MIT License.
+![Gameplay Screenshot](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/Pop_screen.png)
