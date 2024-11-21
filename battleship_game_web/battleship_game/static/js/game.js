@@ -73,9 +73,11 @@ function makeMove(row, col) {
             return;
         }
 
+        updateStatus("Computer is thinking...");
+
+
         // Handle computer's move with delay
         setTimeout(() => {
-            updateStatus("Computer is thinking...");
             fetch('/computer_turn', {
                 method: 'POST'
             })
@@ -96,7 +98,7 @@ function makeMove(row, col) {
                 isPlayerTurn = true;
                 updateStatus("Error occurred. Your turn!");
             });
-        }, 1000);
+        }, 1500);
     })
     .catch(error => {
         console.error('Error during player move:', error);
