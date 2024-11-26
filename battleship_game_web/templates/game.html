@@ -6,23 +6,33 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <!-- Main game container that holds the boards and game status -->
     <div class="game-container">
+
+        <!-- Need Help Button -->
+        <div class="help-link-container">
+            <a href="{{ url_for('help_page') }}" class="btn secondary">Need Help?</a>
+        </div>
+
         <h1 class="game-title">Battleship</h1>
         
+        <!-- Container for both player and computer boards -->
         <div class="boards-container">
             <div class="board-section">
                 <h2>Your Board</h2>
-                <div id="player-board" class="board"></div>
+                <div id="player-board" class="board"></div> <!-- Player's ship grid -->
             </div>
 
             <div class="board-section">
                 <h2>Computer's Board</h2>
-                <div id="computer-board" class="board"></div>
+                <div id="computer-board" class="board"></div> <!-- Computer's ship grid -->
             </div>
         </div>
         
+        <!-- Game status section to display current game state -->
         <div class="game-status" id="game-status">Waiting for game update...</div>
         
+        <!-- Game legend to explain the different markers -->
         <div class="legend">
             <div class="legend-item">
                 <span class="legend-marker ship"></span> Your Ship
@@ -36,24 +46,28 @@
         </div>
     </div>
 
-    <!-- Game Over Modal -->
+    <!-- Modal for game over screen -->
     <div id="game-over-modal" class="modal">
         <div class="modal-content">
             <h2>Game Over!</h2>
             <p id="winner-text"></p>
             <div class="modal-buttons">
+                <!-- Button to restart the game -->
                 <button onclick="restartGame()" class="btn primary">Play Again</button>
+                <!-- Button to return to the main menu -->
                 <button onclick="window.location.href='/'" class="btn secondary">Main Menu</button>
             </div>
         </div>
     </div>
 
+    <!-- Link to game logic JavaScript file -->
     <script src="{{ url_for('static', filename='js/game.js') }}"></script>
     <script>
-        const gridSize = {{ grid_size }};
-        const playerBoard = {{ player_board | tojson }};
-        createBoard('player-board', playerBoard, true);
-        createBoard('computer-board', Array(gridSize).fill().map(() => Array(gridSize).fill("")), false);
+        // JavaScript code that initializes the boards and sets game state
+        const gridSize = {{ grid_size }}; // Set grid size dynamically from server
+        const playerBoard = {{ player_board | tojson }}; // Player's board data passed from server
+        createBoard('player-board', playerBoard, true); // Create player board
+        createBoard('computer-board', Array(gridSize).fill().map(() => Array(gridSize).fill("")), false); // Create empty computer board
     </script>
 </body>
 </html>

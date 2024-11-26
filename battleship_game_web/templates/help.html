@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship Game - Help</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="help-container">
+        <h1 class="help-title">How to Play the Classic Battleship Game</h1>
+        <p>Welcome to Battleship Game! Here’s a detailed guide on how to play the game:</p>
+
+        <section class="section">
+            <h2>Objective</h2>
+            <p>The goal of Battleship is to sink all of your opponent’s ships before they sink all of yours. You and your opponent each have a fleet of ships placed on a grid, and the objective is to locate and hit their ships while avoiding being hit yourself.</p>
+        </section>
+
+        <section class="section">
+            <h2>Game Setup</h2>
+            <p>At the start of the game, both you and your opponent will have a grid, where your ships are placed. You will not be able to see where your opponent's ships are located, so you must guess their positions.</p>
+            <p>Your fleet consists of ships with varying sizes:</p>
+            <ul>
+                <li><strong>Carrier (5 squares)</strong></li>
+                <li><strong>Battleship (4 squares)</strong></li>
+                <li><strong>Cruiser (3 squares)</strong></li>
+                <li><strong>Submarine (3 squares)</strong></li>
+                <li><strong>Destroyer (2 squares)</strong></li>
+            </ul>
+            <p>Your opponent will also have the same set of ships, which they will place randomly on their grid.</p>
+        </section>
+
+        <section class="section">
+            <h2>How to Play</h2>
+            <p>The game proceeds in turns. Each player takes a turn to select a cell (row and column) on the opponent's grid to attack. After each attack:</p>
+            <ul>
+                <li>If the shot hits a ship, the cell will be marked as a "hit" (H) on both your and the opponent's grid.</li>
+                <li>If the shot misses, the cell will be marked as a "miss" (M) on both grids.</li>
+            </ul>
+            <p>The game continues until one player sinks all the opponent's ships. The player who sinks all the enemy ships first wins the game.</p>
+        </section>
+
+        <section class="section">
+            <h2>Ship Placement</h2>
+            <p>At the start of the game, both you and your opponent (the computer) will have ships placed randomly on your grids. You will not be able to see where your opponent's ships are located, so you must guess their positions.</p>
+            <p>In the current single-player version, your ships are placed automatically, either horizontally or vertically, on the grid. Your ships will be represented by blue markers. As the game progresses, you can monitor the position of your ships and track the computer's attacks on your grid.</p>
+            <p>Here’s a brief overview of the ship placement process:</p>
+            <ul>
+                <li><strong>Ship Placement</strong>: Ships are placed automatically at the start of the game. You don’t need to manually position them, but they will appear on your grid once the game begins.</li>
+                <li><strong>Ship Orientation</strong>: Ships are placed either horizontally or vertically and will occupy a specific number of consecutive squares (e.g., Carrier occupies 5 squares).</li>
+                <li><strong>Ship Visibility</strong>: You will be able to see your ships on the grid during gameplay, but your opponent’s ships (the computer’s ships) will remain hidden until they are attacked.</li>
+                <li><strong>No Changes During the Game</strong>: Once the game begins, your ships cannot be moved or repositioned. You will need to carefully monitor both your ships and the computer’s moves.</li>
+            </ul>
+        </section>
+        
+
+        <section class="section">
+            <h2>Winning the Game</h2>
+            <p>The game ends when one player has sunk all the opponent’s ships. The player who sinks all the ships first is declared the winner. The game will also automatically declare the winner when all ships have been sunk.</p>
+        </section>
+
+        <section class="section">
+            <h2>Special Terms</h2>
+            <p>Here are some important terms used during the game:</p>
+            <ul>
+                <li><strong>Hit (H):</strong> A successful attack on an opponent’s ship.</li>
+                <li><strong>Miss (M):</strong> An attack that does not hit an opponent’s ship.</li>
+                <li><strong>Sunk:</strong> When all the squares of a ship have been hit, it is considered sunk.</li>
+                <li><strong>Grid:</strong> The playing area where ships are placed and attacks are made. The grid is usually a 10x10 grid, but the size may vary.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Tips for Playing</h2>
+            <ul>
+                <li>Observe the opponent’s pattern and look for areas where their ships might be clustered.</li>
+                <li>Use the process of elimination to narrow down where the remaining ships might be.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Enjoy!</h2>
+            <p>Now that you understand how the game works, you’re ready to play! May the best player win!</p>
+        </section>
+
+        <div class="button-container">
+            <a href="{{ url_for('start_game') }}" class="btn primary">Back to Game</a>
+        </div>
+    </div>
+</body>
+</html>

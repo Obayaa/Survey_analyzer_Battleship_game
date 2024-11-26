@@ -54,7 +54,7 @@ form {
     font-weight: bold;
 }
 .popup-content button{
-    background-color: #4CAF50;
+    background-color: #3498db;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -248,6 +248,56 @@ form {
 .btn.secondary:hover {
     background-color: #7f8c8d;
 }
+
+
+/* Help Page Styles */
+.help-link-container{
+    justify-content: right;
+    display: flex;
+}
+.help-link-container a{
+    text-decoration: none;
+}
+.help-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.help-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container a{
+    text-decoration: none;
+}
+
 
 /* Responsive Design */
 @media (max-width: 900px) {

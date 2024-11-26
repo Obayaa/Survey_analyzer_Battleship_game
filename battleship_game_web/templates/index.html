@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Battleship Game</title>
+    <!-- Link to external CSS for styling -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Link to external JavaScript for functionality -->
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
 </head>
 <body>
-    <div class="popup-overlay" id ="popupOverlay">
-        <div class="popup" id="">
-            <span class="close" id ="closePopup">&times;</span>
+    <!-- Popup Overlay for displaying grid size selection -->
+    <div class="popup-overlay" id="popupOverlay" role="dialog" aria-labelledby="Heading">
+        <div class="popup" id="popup">
+            <!-- Close button for the popup -->
+            <span class="close" id="closePopup" aria-label="Close popup">&times;</span>
             <div class="popup-content">
-                <p id = "Heading">Welcome to Battleship Game!</p>
+                <!-- Heading and description inside the popup -->
+                <p id="Heading">Welcome to Battleship Game!</p>
                 <p>Select Grid option to start playing the game.</p>
+                
+                <!-- Form for selecting the grid size to start the game -->
                 <form action="{{ url_for('start_game') }}" method="POST">
                     <label for="grid_size">Choose Grid Size:</label>
                     <input type="number" 

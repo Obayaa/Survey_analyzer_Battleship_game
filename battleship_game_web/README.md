@@ -12,7 +12,6 @@ This project is a web-based implementation of the classic **Battleship** game. D
 - [File Structure](#file-structure)
 - [Future Improvements](#future-improvements)
 - [Screenshots](#Screenshots)
-- [License](#license)
 
 ## Features
 
@@ -66,8 +65,13 @@ This project is a web-based implementation of the classic **Battleship** game. D
 ## File Structure
 
 - **app.py**: Main Flask application file to initialize and run the server.
+- **battleship_logic.py**: This file handles all the logic for the game.
+- **requirement.txt**: This file contains all the dependancies used in the game.
 - **templates/**: Contains the HTML files, including the main game page.
   - `index.html`: The main interface for the game.
+  - `game.html`: The main interface for the game.
+  - `help.html`: The interface that explains the rules of the game.
+- **images/**: Holds all the screenshots of the game.
 - **static/**: Holds all static files.
   - **css/**: Contains `styles.css` for custom styling.
   - **js/**: Contains `game.js` for JavaScript game logic.
@@ -83,6 +87,6 @@ This project is a web-based implementation of the classic **Battleship** game. D
 
 ## Screenshots
 
-![Gameplay Screenshot](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/battleship.png)
-
-![Gameplay Screenshot](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/Pop_screen.png)
+![Screenshot of Battleship Game](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/main_screen.png)
+![Screenshot of Battleship Game Popup](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/pop_up.png)
+![Screenshot of Battleship Game Help Page](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/help_page.png)

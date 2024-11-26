@@ -2,6 +2,10 @@ import random
 
 class BattleshipGame:
     def __init__(self):
+        """
+        Initialize a new game with default settings, such as a 10x10 grid,
+        empty boards for the player and computer, and an empty list of ships.
+        """
         self.grid_size = 10
         self.player_board = []
         self.computer_board = []
@@ -32,6 +36,10 @@ class BattleshipGame:
         self.__dict__.update(state)
 
     def new_game(self, size):
+        """
+        Starts a new game, initializes the boards, and places ships on both
+        the player and computer's boards.
+        """
         self.grid_size = size
         self.player_board = [['' for _ in range(size)] for _ in range(size)]
         self.computer_board = [['' for _ in range(size)] for _ in range(size)]
@@ -43,6 +51,10 @@ class BattleshipGame:
         self.computer_ships = self.place_ships(self.computer_board)  
         
     def place_ships(self, board):
+        """
+        Place ships on the provided board by randomly selecting positions and orientations.
+        Returns a list of ships placed on the board.
+        """
         ship_sizes = [5, 4, 3, 3, 2]
         ships = []
         ship_count = 1
@@ -88,6 +100,10 @@ class BattleshipGame:
         return positions
 
     def make_move(self, row, col, is_player=True):
+        """
+        Handles a move by the player or computer, updating the board and ship status.
+        Returns a dictionary with the result of the move.
+        """
         if self.game_over:
             return {"result": "game_over", "winner": self.winner}
 
