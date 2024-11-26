@@ -88,5 +88,5 @@ This project is a web-based implementation of the classic **Battleship** game. D
 ## Screenshots
 
 ![Screenshot of Battleship Game](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/main_screen.png)
-![Screenshot of Battleship Game Popup](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/pop_up.png)
-![Screenshot of Battleship Game Help Page](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/help_page.png)
+![Screenshot of Battleship Game Popup](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/pop_up.png)
+![Screenshot of Battleship Game Help Page](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/help_page.png)
