@@ -6,12 +6,12 @@ This project is a web-based implementation of the classic **Battleship** game. D
 ## Table of Contents
 
 - [Features](#features)
+- [Screenshots](#Screenshots)
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
 - [Gameplay](#gameplay)
 - [File Structure](#file-structure)
 - [Future Improvements](#future-improvements)
-- [Screenshots](#Screenshots)
 
 ## Features
 
@@ -21,6 +21,12 @@ This project is a web-based implementation of the classic **Battleship** game. D
 - **Visual feedback**: Hit and miss statuses are displayed with colors and markers.
 - **Game-over modal**: Declares the winner when all ships of a player are sunk.
 - **Restart functionality**: Players can restart the game without refreshing the page.
+
+## Screenshots
+
+![Screenshot of Battleship Game](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/main_screen.png)
+![Screenshot of Battleship Game Popup](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/pop_up.png)
+![Screenshot of Battleship Game Help Page](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/help_page.png)
 
 ## Technologies Used
 
@@ -84,9 +90,3 @@ This project is a web-based implementation of the classic **Battleship** game. D
 - **Animated Transitions**: Enhance the visual experience with smooth transitions between turns.
 - **Score Tracking**: Implement a scoreboard to keep track of wins and losses across sessions.
 - **Mobile Responsiveness**: Improve design for mobile-friendly gameplay.
-
-## Screenshots
-
-![Screenshot of Battleship Game](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/images/main_screen.png)
-![Screenshot of Battleship Game Popup](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/pop_up.png)
-![Screenshot of Battleship Game Help Page](https://github.com/Obayaa/Survey_analyzer_Battleship_game/blob/main/battleship_game_web/img/help_page.png)
