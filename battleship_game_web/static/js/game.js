@@ -138,36 +138,6 @@ function handleGameOver(winner) {
     }
 }
 
-function restartGame() {
-    // Reset grid data for both player and computer boards
-    boardData = Array(10).fill().map(() => Array(10).fill(''));
-    playerBoard = Array(10).fill().map(() => Array(10).fill(''));
-
-    // Clear and recreate the grids on the UI
-    createBoard('player-board', playerBoard, true);
-    createBoard('computer-board', boardData, false);
-
-    // Hide the game-over modal
-    const modal = document.getElementById('game-over-modal');
-    if (modal) modal.style.display = 'none';
-
-    // Reset player turn and status display
-    isPlayerTurn = true;
-    updateStatus("Your turn!");
-
-    // Optionally send a request to initialize server-side data, if necessary
-    fetch('/start_game', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: `grid_size=${boardData.length}`
-    }).catch(error => {
-        console.error('Error restarting game on server:', error);
-    });
-}
-
-
 // Initialize boards when the page loads
 window.onload = function() {
     // Get the grid size from the form input if it exists
